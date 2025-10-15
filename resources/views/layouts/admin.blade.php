@@ -13,11 +13,14 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <script src="https://kit.fontawesome.com/85420b1c77.js" crossorigin="anonymous"></script>
 
         <!-- Styles -->
         @livewireStyles
+        
     </head>
-    <body class="font-sans antialiased bg-blue-100">
+    <body class="font-sans antialiased bg-gray-50">
+
 
        @include('layouts.includes.admin.navigation')
 
@@ -33,5 +36,7 @@
         @stack('modals')
 
         @livewireScripts
+         <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
     </body>
 </html>

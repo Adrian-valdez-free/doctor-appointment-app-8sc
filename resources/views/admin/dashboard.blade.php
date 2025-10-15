@@ -1,4 +1,4 @@
 <x-admin-layout>
-  el balon de oro es de henry martin
+  La sexta llegara
 
 </x-admin-layout>
