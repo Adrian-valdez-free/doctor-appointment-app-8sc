@@ -1,3 +1,5 @@
+{{-- Toma los parametros del dashboard  --}}
+@props(['breadcrumbs' => []])
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -14,13 +16,13 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <script src="https://kit.fontawesome.com/85420b1c77.js" crossorigin="anonymous"></script>
+             
+    <script src="//unpkg.com/alpinejs" defer></script>
+          <wireui:scripts />
 
         <!-- Styles -->
         @livewireStyles
-       
-    <script src="//unpkg.com/alpinejs" defer></script>
-          <wireui:scripts />
-          
+  
     </head>
     <body class="font-sans antialiased bg-gray-50">
 
@@ -31,10 +33,13 @@
 
         <div class="p-4 sm:ml-64">
 <!-- Añadir nmargen xdxdxddx-->
- <div class = "mt-14">
+ >
+    <div class = "mt-14">
+        @include('layouts.includes.admin.breadcrumb')
+        
+    </div>
  {{$slot}}  
 </div>
-        </div>
 
         @stack('modals')
 
