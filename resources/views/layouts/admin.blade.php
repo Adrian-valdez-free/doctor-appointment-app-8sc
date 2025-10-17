@@ -17,7 +17,10 @@
 
         <!-- Styles -->
         @livewireStyles
-        
+       
+    <script src="//unpkg.com/alpinejs" defer></script>
+          <wireui:scripts />
+          
     </head>
     <body class="font-sans antialiased bg-gray-50">
 
