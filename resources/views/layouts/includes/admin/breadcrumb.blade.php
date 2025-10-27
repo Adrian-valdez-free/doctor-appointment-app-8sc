@@ -9,7 +9,7 @@
       <li class = "flex item center">
         {{-- ITMérida7/ Campus Poniente / DSC / Edificio H / H8 --}}
         {{-- si NO es el primer elemento ponle separador antes--}}
-        @unless($loop)
+        @unless($loop->first)
         <span class = "px-2 text-gray-400">/</span>
         @endunless
         {{-- Revise si tiene un href--}}
@@ -27,8 +27,8 @@
   {{-- checa el ultimo elemento en negritas--}}
 @if  (count($breadcrumbs) > 1)
 {{--Mt margin top--}}
-<h6>
-  {{end($breadcrumbs['name'])}}
+<h6 class = "font-bold mt-2">
+  {{end($breadcrumbs)['name']}}
 </h6>
 @endif
 </nav>

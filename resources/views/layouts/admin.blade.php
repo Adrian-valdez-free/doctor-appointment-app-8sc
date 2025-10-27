@@ -1,5 +1,6 @@
 {{-- Toma los parametros del dashboard  --}}
 @props(['breadcrumbs' => []])
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -22,7 +23,7 @@
 
         <!-- Styles -->
         @livewireStyles
-  
+
     </head>
     <body class="font-sans antialiased bg-gray-50">
 
@@ -33,8 +34,8 @@
 
         <div class="p-4 sm:ml-64">
 <!-- Añadir nmargen xdxdxddx-->
- >
-    <div class = "mt-14">
+ 
+    <div class = "mt-14 flex items-center justify-between w-full">
         @include('layouts.includes.admin.breadcrumb')
         
     </div>
