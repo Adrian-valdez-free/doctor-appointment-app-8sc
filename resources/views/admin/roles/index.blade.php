@@ -1,12 +1,12 @@
 <x-admin-layout :breadcrumbs="[
 
    [
-    'name' => 'ITMérida',
+    'name' => 'Dashboards',
     'href' => route('admin.dashboard'),
    ],
 
-    [ 'name' => 'H8'],
-]"> 
-  La sexta llegara
+    [ 'name' => 'Roles'],
+]">
+    @livewire('admin.datatables.role-table')
 
 </x-admin-layout>

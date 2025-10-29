@@ -34,13 +34,13 @@ $links = [
                     ],
     ],
     [
-        'header' => 'Administrar jugadores',
+        'header' => 'Gestion',
     ],
      [
-        'name' => 'Players',
-        'icon' => 'fa-solid fa-gauge',
-        'href' => route('admin.dashboard'),
-        'active' => request()->routeIs('admin.dashboard'),
+        'name' => 'Roles y permisos',
+        'icon' => 'fa-solid fa-shield-halved',
+        'href' => route('adminroles.index'),
+        'active' => request()->routeIs('adminroles.*'),
     ],
 ];
 @endphp
