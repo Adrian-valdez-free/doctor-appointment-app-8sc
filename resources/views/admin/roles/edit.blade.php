@@ -1,4 +1,4 @@
-<x-admin-layout :breadcrumbs="[
+<x-admin-layout tittle="Roles | Healthy" :breadcrumbs="[
 
    [
     'name' => 'Dashboards',
@@ -11,7 +11,5 @@
 
     [ 'name' => 'Editar'],
 ]">
-@livewire('admin.datatables.role-table')
-
 
 </x-admin-layout>
