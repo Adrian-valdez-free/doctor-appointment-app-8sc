@@ -8,32 +8,6 @@ $links = [
         'active' => request()->routeIs('admin.dashboard'),
     ],
     [
-        'header' => 'administrar página',
-    ],
-    [
-        'name' => 'No se usar',
-        'icon' => 'fa-solid fa-gauge',
-        'href' => route('admin.dashboard'),
-        'active' => request()->routeIs('admin.dashboard'),
-        'submenu'=> [
-            [
-             'name' => 'Main',
-             'href' => '#',
-             'active' => false,  
-            ],
-            [
-             'name' => 'Users',
-             'href' => '#',
-             'active' => false,  
-            ],
-            [
-             'name' => 'Billing',
-             'href' => '#',
-             'active' => false,  
-            ],
-                    ],
-    ],
-    [
         'header' => 'Gestion',
     ],
      [

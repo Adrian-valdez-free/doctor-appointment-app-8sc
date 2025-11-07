@@ -19,7 +19,14 @@
 
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
+
+
         <script src="https://kit.fontawesome.com/85420b1c77.js" crossorigin="anonymous"></script>
+
+        <!-- Sweetalert2 -->
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
              
           <wireui:scripts />
 
@@ -36,17 +43,17 @@
 
         <div class="p-4 sm:ml-64">
 <!-- Añadir nmargen xdxdxddx-->
- 
+
     <div class = "mt-14 flex items-center justify-between w-full">
         @include('layouts.includes.admin.breadcrumb')
-        
-        @if (isset($action))
-        <div>
-            {{ $action }}
-        </div>
+
+     @if (isset($action))
+    <div>
+    {{ $action }}
+    </div>
     @endif
     </div>
- {{$slot}}  
+ {{$slot}}
 
 </div>
 
@@ -54,6 +61,14 @@
 
         @livewireScripts
           <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+        
+       <!-- Mostrar sweet alert -->
+    @if (@session('swal'))
+        <script>
+                        Swal.fire(@json(session('swal')));
+;
+        </script>
+    @endif
 
     </body>
 </html>
