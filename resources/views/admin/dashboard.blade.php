@@ -5,7 +5,7 @@
     'href' => route('admin.dashboard'),
    ],
 
-    [ 'name' => 'H8'],
+   [ 'name' => 'H8'],
 ]"> 
   La sexta llegara
 
